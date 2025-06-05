@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pet Tracker - Login</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Firebase App (the core Firebase SDK) -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🐾 Pet Tracker</h1>
+
+    <div id="form-container">
+      <form id="login-form" class="form">
+        <h2>Login</h2>
+        <input type="email" id="login-email" placeholder="Email" required />
+        <input type="password" id="login-password" placeholder="Password" required />
+        <button type="submit">Login</button>
+        <p>Don't have an account? <a href="#" onclick="toggleForm()">Sign Up</a></p>
+      </form>
+
+      <form id="signup-form" class="form hidden">
+        <h2>Sign Up</h2>
+        <input type="email" id="signup-email" placeholder="Email" required />
+        <input type="password" id="signup-password" placeholder="Password" required />
+        <button type="submit">Sign Up</button>
+        <p>Already have an account? <a href="#" onclick="toggleForm()">Login</a></p>
+      </form>
+    </div>
+
+    <p id="status-message"></p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
